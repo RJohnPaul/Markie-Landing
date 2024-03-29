@@ -184,7 +184,7 @@ export default function Home() {
                 </a>
                 <a
                   className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-500 text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-gray-900 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="https://reactnative.dev/"
+                  href="https://nextjs.org/"
                   target="_blank"
                 >
                   <ReactLogo className="flex-shrink-0 w-4 h-4" />
@@ -206,16 +206,14 @@ export default function Home() {
               <span className="text-red-600 leading-8">&nbsp;Below</span>
             </h1>
             <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
-              Click on the video for the demo.
+              &nbsp;
             </p>
           </div>
 
-          <div className="mt-10 relative max-w-5xl mx-auto">
-            <div className="w-full object-cover h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
-
-            <div className="absolute inset-0 w-full h-full">
-              <div className="flex flex-col justify-center items-center w-full h-full">
-                {!showVideo ? (
+          <div onClick={handlePlayClick} className="mt-10 relative max-w-5xl mx-auto">
+            <div className="relative w-full h-96 sm:h-[480px] bg-[url('https://images.unsplash.com/photo-1606868306217-dbf5046868d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1981&q=80')] bg-no-repeat bg-center bg-cover rounded-xl">
+              <div className="absolute inset-0 w-full h-full flex justify-center items-center">
+                {!showVideo && (
                   <button
                     className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                     onClick={handlePlayClick}
@@ -236,11 +234,16 @@ export default function Home() {
                     </svg>
                     Play the overview
                   </button>
-                ) : (
+                )}
+              </div>
+            </div>
+            <div className="absolute inset-0 w-full h-full">
+              <div className="flex flex-col justify-center items-center w-full h-full">
+                {showVideo && (
                   <video
                     controls
-                    className="w-150 h-150 sm:w-96 h-96 rounded-xl shadow-lg dark:shadow-gray-900"
-                    src="/todolistdemo.mp4"
+                    className="rounded-xl shadow-lg dark:shadow-gray-900"
+                    src="/demo.mp4"
                     autoPlay
                   >
                     Your browser does not support the video tag.
@@ -268,19 +271,20 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="lg:w-3/4">
               <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
-                Collaborative tools to design better user experience
+                Collaborative tool for Markdown
               </h2>
               <p className="mt-3 text-gray-800 dark:text-gray-400">
-                We help businesses bring ideas to life in the digital world, by
-                designing and implementing the technology tools that they need
-                to win.
+                Markie is a collaborative tool for markdown. It allows you to
+                add your text and convert it to markdown. You can also copy the
+                markdown text and use it in your projects.
               </p>
               <p className="mt-5">
                 <a
                   className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500"
-                  href="#"
+                  target="_blank"
+                  href="https://remark.js.org/"
                 >
-                  Contact sales to learn more
+                  Check out Remark.js documentation
                   <svg
                     className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -322,12 +326,12 @@ export default function Home() {
                 </span>
                 <div className="ms-5 sm:ms-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Industry-leading documentation
+                    Industry-leading tool for Markdown
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    Our documentation and extensive Client libraries contain
-                    everything a business needs to build a custom integration in
-                    a fraction of the time.
+                    Markie is an industry-leading tool for markdown. It allows
+                    you to convert your text to markdown and use it in your
+                    projects.
                   </p>
                 </div>
               </div>
@@ -354,12 +358,11 @@ export default function Home() {
                 </span>
                 <div className="ms-5 sm:ms-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Developer community support
+                    Toolbar support for Beginners
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    We actively contribute to open-source projects—giving back
-                    to the community through development, patches, and
-                    sponsorships.
+                    Markie also supports a toolbar for beginners. You can make
+                    your text bold, italic, and more with the toolbar.
                   </p>
                 </div>
               </div>
@@ -386,11 +389,12 @@ export default function Home() {
                 </span>
                 <div className="ms-5 sm:ms-8">
                   <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    Simple and affordable
+                    Simple,Fast And Responsive
                   </h3>
                   <p className="mt-1 text-gray-600 dark:text-gray-400">
-                    From boarding passes to movie tickets, there's pretty much
-                    nothing you can't store with Preline.
+                    Markie is simple, fast, and responsive. It is built with
+                    NextJS and TailwindCSS. It is also responsive and works on
+                    all devices.
                   </p>
                 </div>
               </div>
