@@ -2,8 +2,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {Linkedin} from "@styled-icons/boxicons-logos/Linkedin";
-import {Github} from "@styled-icons/boxicons-logos/Github";
+import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin";
+import { Github } from "@styled-icons/boxicons-logos/Github";
 import { ReactLogo } from "styled-icons/boxicons-logos";
 import { TailwindCss } from "styled-icons/boxicons-logos";
 
@@ -26,7 +26,7 @@ export default function Home() {
               href="#"
               aria-label="Brand"
             >
-              TodoList
+              Markie
             </a>
             <div className="md:hidden">
               <button
@@ -79,7 +79,7 @@ export default function Home() {
                 to="Landing"
                 smooth={true}
                 duration={500}
-                className="cursor-pointer font-medium text-blue-600 md:py-6 dark:text-blue-500"
+                className="cursor-pointer font-medium text-red-600 md:py-6 dark:text-red-500"
                 spy={true}
                 offset={-70}
               >
@@ -119,7 +119,7 @@ export default function Home() {
                 to="Contact"
                 smooth={true}
                 duration={500}
-                className="cursor-pointer flex items-center gap-x-2 pt-2 pb-2 font-medium text-gray-500 hover:text-blue-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-blue-500"
+                className="cursor-pointer flex items-center gap-x-2 pt-2 pb-2 font-medium text-gray-500 hover:text-red-600 md:border-s md:border-gray-300 md:my-6 md:ps-6 dark:border-gray-700 dark:text-gray-400 dark:hover:text-red-500"
                 spy={true}
                 offset={-70}
               >
@@ -138,22 +138,22 @@ export default function Home() {
         <div className="relative z-10">
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div className="max-w-2xl text-center mx-auto">
-              <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                A React Native App
+              <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-red-600 to-violet-500 text-transparent dark:from-red-400 dark:to-violet-400">
+                A Nextjs Web App
               </p>
               {/* Title */}
               <div className="mt-5 max-w-2xl">
                 <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                  TodoList App
+                  Markie - Text to Markdown
                 </h1>
               </div>
               {/* End Title */}
               <div className="mt-5 max-w-3xl">
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                  This app is built on React Native and is a simple todo list
-                  with basic features. It is a great starting point for
-                  beginners to learn React Native. It is build with basic CSS to
-                  provide a simple and clean UI.
+                  A simple web app to convert your text to markdown. Just type
+                  in the text and see the right side to get the markdown text.
+                  You can also copy the markdown text. the text to markdown also
+                  utilizes a toolbar to make the text bold, italic, and more.
                 </p>
               </div>
               {/* Buttons */}
@@ -162,10 +162,11 @@ export default function Home() {
                 data-hs-overlay="#hs-cookies"
               >
                 <a
-                  className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold transition-all rounded-full border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="/todolist.apk"
+                  className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold transition-all rounded-full border border-transparent bg-red-600 text-white hover:bg-red-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  target="_blank"
+                  href="https://markie-gdsc.vercel.app/"
                 >
-                  Download Apk
+                  Visit Markie
                   <svg
                     className="flex-shrink-0 w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +188,7 @@ export default function Home() {
                   target="_blank"
                 >
                   <ReactLogo className="flex-shrink-0 w-4 h-4" />
-                  React Native
+                  NextJS
                 </a>
               </div>
               {/* End Buttons */}
@@ -202,7 +203,7 @@ export default function Home() {
           <div className="max-w-2xl text-center mx-auto">
             <h1 className="block text-3xl leading-8 font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
               View the Live Demo
-              <span className="text-blue-600 leading-8">&nbsp;Below</span>
+              <span className="text-red-600 leading-8">&nbsp;Below</span>
             </h1>
             <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
               Click on the video for the demo.
@@ -252,7 +253,7 @@ export default function Home() {
               <div className="bg-white w-48 h-48 rounded-lg dark:bg-slate-900"></div>
             </div>
 
-            <div className="absolute -top-12 -end-20 -z-[1] w-48 h-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
+            <div className="absolute -top-12 -end-20 -z-[1] w-48 h-48 bg-gradient-to-t from-red-600 to-cyan-400 p-px rounded-full">
               <div className="bg-white w-48 h-48 rounded-full dark:bg-slate-900"></div>
             </div>
           </div>
@@ -262,211 +263,142 @@ export default function Home() {
         id="Features"
         className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
       >
-        <div className="relative p-6 md:p-16">
-          <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
-            <div className="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
-              <h2 className="text-2xl text-gray-800 font-bold sm:text-3xl dark:text-gray-200">
-                Fully customizable app for a fresh start
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+          {/* Grid */}
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="lg:w-3/4">
+              <h2 className="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
+                Collaborative tools to design better user experience
               </h2>
-
-              <nav
-                className="grid gap-4 mt-5 md:mt-10"
-                aria-label="Tabs"
-                role="tablist"
-              >
-                <button
-                  type="button"
-                  className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 active"
-                  id="tabs-with-card-item-1"
-                  data-hs-tab="#tabs-with-card-1"
-                  aria-controls="tabs-with-card-1"
-                  role="tab"
+              <p className="mt-3 text-gray-800 dark:text-gray-400">
+                We help businesses bring ideas to life in the digital world, by
+                designing and implementing the technology tools that they need
+                to win.
+              </p>
+              <p className="mt-5">
+                <a
+                  className="inline-flex items-center gap-x-1 font-medium text-blue-600 dark:text-blue-500"
+                  href="#"
                 >
-                  <span className="flex">
-                    <svg
-                      class="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
-                      <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
-                      <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
-                      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
-                      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
-                    </svg>
-                    <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        Basic Features
-                      </span>
-                      <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        Basic UI and features to get started with React Native.
-                      </span>
-                    </span>
-                  </span>
-                </button>
-
-                <button
-                  type="button"
-                  className="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  id="tabs-with-card-item-2"
-                  data-hs-tab="#tabs-with-card-2"
-                  aria-controls="tabs-with-card-2"
-                  role="tab"
-                >
-                  <span className="flex">
-                    <svg
-                      class="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m12 14 4-4" />
-                      <path d="M3.34 19a10 10 0 1 1 17.32 0" />
-                    </svg>
-                    <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        Quick Model
-                      </span>
-                      <span className="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        A quick working model with basic features to get started
-                        with React Native.
-                      </span>
-                    </span>
-                  </span>
-                </button>
-
-                <button
-                  type="button"
-                  class="hs-tab-active:bg-white hs-tab-active:shadow-md hs-tab-active:hover:border-transparent text-start hover:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-slate-900 dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  id="tabs-with-card-item-3"
-                  data-hs-tab="#tabs-with-card-3"
-                  aria-controls="tabs-with-card-3"
-                  role="tab"
-                >
-                  <span className="flex">
-                    <svg
-                      class="flex-shrink-0 mt-2 h-6 w-6 md:w-7 md:h-7 hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                      <path d="M5 3v4" />
-                      <path d="M19 17v4" />
-                      <path d="M3 5h4" />
-                      <path d="M17 19h4" />
-                    </svg>
-                    <span className="grow ms-6">
-                      <span className="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-gray-200">
-                        CSS Styling
-                      </span>
-                      <span class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-gray-200">
-                        Reduce time and effort on building UI with basic CSS
-                        styling.
-                      </span>
-                    </span>
-                  </span>
-                </button>
-              </nav>
-            </div>
-
-            <div className="lg:col-span-6">
-              <div className="relative">
-                <div>
-                  <div
-                    id="tabs-with-card-1"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-1"
-                  >
-                    <img
-                      class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Image Description"
-                    />
-                  </div>
-
-                  <div
-                    id="tabs-with-card-2"
-                    class="hidden"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-2"
-                  >
-                    <img
-                      class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://images.unsplash.com/photo-1583732964634-2576820523d0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BlZWRvbWV0ZXJ8ZW58MHwxfDB8fHww"
-                      alt="Image Description"
-                    />
-                  </div>
-
-                  <div
-                    id="tabs-with-card-3"
-                    class="hidden"
-                    role="tabpanel"
-                    aria-labelledby="tabs-with-card-item-3"
-                  >
-                    <img
-                      class="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/[.2]"
-                      src="https://images.unsplash.com/photo-1618788372246-79faff0c3742?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      alt="Image Description"
-                    />
-                  </div>
-                </div>
-
-                <div className="hidden absolute top-0 end-0 translate-x-20 md:block lg:translate-x-20">
+                  Contact sales to learn more
                   <svg
-                    class="w-16 h-auto text-orange-500"
-                    width="121"
-                    height="135"
-                    viewBox="0 0 121 135"
-                    fill="none"
+                    className="flex-shrink-0 size-4 transition ease-in-out group-hover:translate-x-1"
                     xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   >
-                    <path
-                      d="M5 16.4754C11.7688 27.4499 21.2452 57.3224 5 89.0164"
-                      stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M33.6761 112.104C44.6984 98.1239 74.2618 57.6776 83.4821 5"
-                      stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M50.5525 130C68.2064 127.495 110.731 117.541 116 78.0874"
-                      stroke="currentColor"
-                      stroke-width="10"
-                      stroke-linecap="round"
-                    />
+                    <path d="m9 18 6-6-6-6" />
                   </svg>
+                </a>
+              </p>
+            </div>
+            {/* End Col */}
+            <div className="space-y-6 lg:space-y-10">
+              {/* Icon Block */}
+              <div className="flex">
+                {/* Icon */}
+                <span className="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                  <svg
+                    className="flex-shrink-0 size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                  </svg>
+                </span>
+                <div className="ms-5 sm:ms-8">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                    Industry-leading documentation
+                  </h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-400">
+                    Our documentation and extensive Client libraries contain
+                    everything a business needs to build a custom integration in
+                    a fraction of the time.
+                  </p>
                 </div>
               </div>
+              {/* End Icon Block */}
+              {/* Icon Block */}
+              <div className="flex">
+                {/* Icon */}
+                <span className="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                  <svg
+                    className="flex-shrink-0 size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
+                    <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+                  </svg>
+                </span>
+                <div className="ms-5 sm:ms-8">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                    Developer community support
+                  </h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-400">
+                    We actively contribute to open-source projects—giving back
+                    to the community through development, patches, and
+                    sponsorships.
+                  </p>
+                </div>
+              </div>
+              {/* End Icon Block */}
+              {/* Icon Block */}
+              <div className="flex">
+                {/* Icon */}
+                <span className="flex-shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-slate-900 dark:border-gray-700 dark:text-gray-200">
+                  <svg
+                    className="flex-shrink-0 size-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M7 10v12" />
+                    <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
+                  </svg>
+                </span>
+                <div className="ms-5 sm:ms-8">
+                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                    Simple and affordable
+                  </h3>
+                  <p className="mt-1 text-gray-600 dark:text-gray-400">
+                    From boarding passes to movie tickets, there's pretty much
+                    nothing you can't store with Preline.
+                  </p>
+                </div>
+              </div>
+              {/* End Icon Block */}
             </div>
+            {/* End Col */}
           </div>
-
-          <div className="absolute inset-0 grid grid-cols-12 w-full h-full">
-            <div className="col-span-full lg:col-span-7 lg:col-start-6 bg-gray-100 w-full h-5/6 rounded-xl sm:h-3/4 lg:h-full dark:bg-white/[.075]"></div>
-          </div>
+          {/* End Grid */}
         </div>
       </section>
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -495,7 +427,7 @@ export default function Home() {
             {/* Star */}
             <div className="flex-shrink-0 flex justify-center space-x-1 mt-3">
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -508,7 +440,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -521,7 +453,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -534,7 +466,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -547,7 +479,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -586,7 +518,7 @@ export default function Home() {
             {/* Star */}
             <div className="flex-shrink-0 flex justify-center space-x-1 mt-3">
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -599,7 +531,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -612,7 +544,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -625,7 +557,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -638,7 +570,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -681,7 +613,7 @@ export default function Home() {
             {/* Star */}
             <div className="flex-shrink-0 flex justify-center space-x-1 mt-3">
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -694,7 +626,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -707,7 +639,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -720,7 +652,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -733,7 +665,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -860,7 +792,7 @@ export default function Home() {
             {/* Star */}
             <div className="flex-shrink-0 flex justify-center space-x-1 mt-3">
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -873,7 +805,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -886,7 +818,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -899,7 +831,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -912,7 +844,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -991,7 +923,7 @@ export default function Home() {
             {/* Star */}
             <div className="flex-shrink-0 flex justify-center space-x-1 mt-3">
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -1004,7 +936,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -1017,7 +949,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -1030,7 +962,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -1043,7 +975,7 @@ export default function Home() {
                 />
               </svg>
               <svg
-                className="h-4 w-4 text-blue-500"
+                className="h-4 w-4 text-red-500"
                 width={51}
                 height={51}
                 viewBox="0 0 51 51"
@@ -1098,11 +1030,11 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  How do I add tasks to my to-do list?
+                  How does Markie allow users to input Markdown text?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  To add tasks to your to-do list, simply tap the{"'"}Add Task{"'"};
-                  button on the app's main screen and enter the task details.
+                  To input Markdown text, users simply need to type directly
+                  into the text input area provided by Markie.
                 </p>
               </div>
             </div>
@@ -1127,11 +1059,11 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Can I set reminders for my tasks?
+                  How does Markie provide real-time rendering of Markdown input?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Yes, you can set reminders for your tasks. Tap on a task, and
-                  you'll find an option to set a reminder for it.
+                  Markie utilizes Remark.js to parse the Markdown input and
+                  update the preview in real-time as the user types.
                 </p>
               </div>
             </div>
@@ -1156,11 +1088,11 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Can I prioritize tasks in my to-do list?
+                  What role does Next.js play in Markie's architecture?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Yes, you can prioritize tasks by dragging and dropping them in
-                  the order you prefer.
+                  Next.js provides server-side rendering and routing for Markie,
+                  enhancing its performance and SEO capabilities.
                 </p>
               </div>
             </div>
@@ -1185,11 +1117,12 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  Is my to-do list data synchronized across devices?
+                  How does Tailwind CSS contribute to Markie's styling?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  Yes, your to-do list data is synchronized across devices if
-                  you are logged in with the same account on all devices.
+                  Tailwind CSS is used for rapid UI development in Markie,
+                  providing utility classes for consistent and responsive
+                  styling.
                 </p>
               </div>
             </div>
@@ -1214,11 +1147,11 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  How do I edit a task in my to-do list?
+                  What functionalities does React Hot Toast provide in Markie?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  To edit a task, tap on the task you want to edit, then click
-                  the 'Edit' button to modify its details.
+                  React Hot Toast is used for displaying toast notifications in
+                  Markie, enhancing user interaction and feedback.
                 </p>
               </div>
             </div>
@@ -1243,11 +1176,11 @@ export default function Home() {
               </svg>
               <div>
                 <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
-                  How do I update a task in my to-do list?
+                  What functionalities does Remark.js provide in Markie?
                 </h3>
                 <p className="mt-1 text-gray-500">
-                  After editing a task, click the&nbsp;'Update Task'&nbsp;button to save
-                  the changes to that task.
+                  Remark.js is utilized for parsing Markdown input and
+                  converting it into HTML for rendering in Markie.
                 </p>
               </div>
             </div>
@@ -1267,7 +1200,7 @@ export default function Home() {
               href="#"
               aria-label="Brand"
             >
-              TodoList
+              Markie
             </a>
           </div>
           {/* End Col */}
@@ -1275,7 +1208,7 @@ export default function Home() {
             <p className="text-gray-500">
               A Product of{" "}
               <a
-                className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400"
+                className="font-semibold text-red-600 hover:text-red-700 dark:text-red-500 dark:hover:text-red-400"
                 href="https://john-porfolio.vercel.app/"
                 target="_blank"
               >
@@ -1283,34 +1216,34 @@ export default function Home() {
               </a>{" "}
             </p>
             <p className="text-gray-500">
-              © ToDoList. All rights reserved with ❤️
+              © Markie. All rights reserved with ❤️
             </p>
           </div>
           {/* Social Brands */}
           <div className="mt-3 space-x-2">
             <a
-              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
               href="https://tailwindcss.com/"
               target="_blank"
             >
               <TailwindCss className="flex-shrink-0 w-5 h-5" />
             </a>
             <a
-              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
               href="https://react.dev/"
               target="_blank"
             >
               <ReactLogo className="flex-shrink-0 w-5 h-5" />
             </a>
             <a
-              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
-              href="https://github.com/RJohnPaul/Todolist_app"
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+              href="https://github.com/RJohnPaul/Markie"
               target="_blank"
             >
               <Github className="flex-shrink-0 w-5 h-5" />
             </a>
             <a
-              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+              className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
               href="https://www.linkedin.com/in/john-paul-572496278/"
               target="_blank"
             >
